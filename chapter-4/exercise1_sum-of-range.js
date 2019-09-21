@@ -43,7 +43,7 @@ function range(start, end, step = (start < end) ? 1 : -1) {
 // }
 //--------------------
 
-// Second attempt:
+// Second attempt (notice the for loop):
 function sum(arr) {
   let sum = 0;
 
