@@ -1,9 +1,20 @@
 function range(start, end, step) {
   let arr = [];
 
-  while (start < end) arr.push(start+=step);
+  if (step < 0) {
+    while (start > end) {
+      arr.push(start);
+      start += step;
+    }
+  } else {
+
+  }
   
   return arr;
+}
+
+function sum() {
+
 }
 
 console.log(range(1, 10));
