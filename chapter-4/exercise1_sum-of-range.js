@@ -17,9 +17,10 @@
   
 //   return arr;
 // }
+//--------------------
 
-
-function range(start, end, step = start < end ? 1 : -1) {
+// Second attempt after looking at solution (notice the ternary for the 'step' var):
+function range(start, end, step = (start < end) ? 1 : -1) {
   let arr = [];
 
   if (step < 0) {
@@ -30,11 +31,23 @@ function range(start, end, step = start < end ? 1 : -1) {
   
   return arr;
 }
+//--------------------
 
+// First attempt:
+// function sum(arr) {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) sum += arr[i];
+
+//   return sum;
+// }
+//--------------------
+
+// Second attempt:
 function sum(arr) {
   let sum = 0;
 
-  for (let i = 0; i < arr.length; i++) sum += arr[i];
+  for (let num of arr) sum += num;
 
   return sum;
 }
@@ -45,6 +58,7 @@ console.log(range(5, 2, -1));
 // → [5, 4, 3, 2]
 console.log(sum(range(1, 10)));
 // → 55
+//--------------------
 
 // Solution:
 // function range(start, end, step = start < end ? 1 : -1) {
