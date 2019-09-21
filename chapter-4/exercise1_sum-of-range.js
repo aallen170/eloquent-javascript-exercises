@@ -1,7 +1,7 @@
-function range(start, end) {
+function range(start, end, step) {
   let arr = [];
 
-  while (start < end) arr.push(start++);
+  while (start < end) arr.push(start+=step);
   
   return arr;
 }
