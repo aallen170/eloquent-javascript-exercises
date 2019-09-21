@@ -7,7 +7,10 @@ function range(start, end, step) {
       start += step;
     }
   } else {
-
+    if (step > 0) {
+      arr.push(start);
+      start += step;
+    } else ()
   }
   
   return arr;
