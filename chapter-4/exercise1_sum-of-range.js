@@ -2,22 +2,27 @@ function range(start, end, step) {
   let arr = [];
 
   if (step < 0) {
-    while (start > end) {
+    while (start >= end) {
       arr.push(start);
       start += step;
     }
-  } else {
-    if (step > 0) {
+  } else if (step > 0) {
+    while (start <= end) {
       arr.push(start);
       start += step;
-    } else ()
-  }
+    }
+  } else if (step === 0) return 'step cannot be 0';
+  else while (start <= end) arr.push(start++);
   
   return arr;
 }
 
-function sum() {
+function sum(arr) {
+  let sum = 0;
 
+  for (let i = 0; i < arr.length; i++) sum += arr[i];
+
+  return sum;
 }
 
 console.log(range(1, 10));
