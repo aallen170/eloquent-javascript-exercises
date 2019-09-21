@@ -16,6 +16,7 @@ for (let i = 0; i < size; i++) {
   console.log(str);
   alternate = !alternate;
 }
+//--------------------
 
 // Solution:
 // let size = 8;

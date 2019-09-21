@@ -6,6 +6,7 @@ for (let i = 1; i <= 100; i++) {
   
   console.log(str || i);
 }
+//--------------------
 
 // Solution:
 // for (let n = 1; n <= 100; n++) {
